@@ -12,7 +12,7 @@ function ash_blog_taxonomy_default_vocabularies() {
     'category' => array(
       'name' => 'Category',
       'machine_name' => 'category',
-      'description' => 'Basic blog categories.',
+      'description' => 'Blog categories',
       'hierarchy' => '0',
       'module' => 'taxonomy',
       'weight' => '0',
