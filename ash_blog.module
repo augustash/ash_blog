@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Ash Blog feature.
+ */
+
+include_once 'ash_blog.features.inc';

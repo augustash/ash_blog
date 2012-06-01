@@ -1,7 +1,0 @@
-<?php
-/**
- * @file
- * Code for the AAI Blog feature.
- */
-
-include_once('aai_blog.features.inc');

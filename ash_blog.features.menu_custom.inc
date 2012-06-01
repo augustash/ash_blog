@@ -1,13 +1,13 @@
 <?php
 /**
  * @file
- * aai_blog.features.menu_custom.inc
+ * ash_blog.features.menu_custom.inc
  */
 
 /**
- * Implementation of hook_menu_default_menu_custom().
+ * Implements hook_menu_default_menu_custom().
  */
-function aai_blog_menu_default_menu_custom() {
+function ash_blog_menu_default_menu_custom() {
   $menus = array();
 
   // Exported menu: main-menu
