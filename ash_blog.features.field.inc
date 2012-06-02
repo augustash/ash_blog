@@ -290,7 +290,7 @@ function ash_blog_field_default_fields() {
           'module' => 'image',
           'settings' => array(
             'image_link' => '',
-            'image_style' => 'blog_featured_image',
+            'image_style' => '',
           ),
           'type' => 'image',
           'weight' => '0',
