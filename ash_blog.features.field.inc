@@ -10,7 +10,7 @@
 function ash_blog_field_default_fields() {
   $fields = array();
 
-  // Exported field: 'comment-comment_node_blog_entry-comment_body'
+  // Exported field: 'comment-comment_node_blog_entry-comment_body'.
   $fields['comment-comment_node_blog_entry-comment_body'] = array(
     'field_config' => array(
       'active' => '1',
@@ -33,6 +33,7 @@ function ash_blog_field_default_fields() {
           0 => 'format',
         ),
       ),
+      'locked' => '0',
       'module' => 'text',
       'settings' => array(),
       'translatable' => '0',
@@ -55,15 +56,20 @@ function ash_blog_field_default_fields() {
       'entity_type' => 'comment',
       'field_name' => 'comment_body',
       'label' => 'Comment',
-      'required' => TRUE,
+      'required' => 1,
       'settings' => array(
-        'text_processing' => 1,
+        'linkit' => array(
+          'enable' => 0,
+          'insert_plugin' => '',
+        ),
+        'text_processing' => '0',
         'user_register_form' => FALSE,
       ),
       'widget' => array(
+        'active' => 1,
         'module' => 'text',
         'settings' => array(
-          'rows' => 5,
+          'rows' => '5',
         ),
         'type' => 'text_textarea',
         'weight' => 0,
@@ -71,7 +77,7 @@ function ash_blog_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-blog_entry-body'
+  // Exported field: 'node-blog_entry-body'.
   $fields['node-blog_entry-body'] = array(
     'field_config' => array(
       'active' => '1',
@@ -94,6 +100,7 @@ function ash_blog_field_default_fields() {
           0 => 'format',
         ),
       ),
+      'locked' => '0',
       'module' => 'text',
       'settings' => array(),
       'translatable' => '1',
@@ -150,7 +157,7 @@ function ash_blog_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-blog_entry-field_categories'
+  // Exported field: 'node-blog_entry-field_categories'.
   $fields['node-blog_entry-field_categories'] = array(
     'field_config' => array(
       'active' => '1',
@@ -171,6 +178,7 @@ function ash_blog_field_default_fields() {
           0 => 'tid',
         ),
       ),
+      'locked' => '0',
       'module' => 'taxonomy',
       'settings' => array(
         'allowed_values' => array(
@@ -251,7 +259,7 @@ function ash_blog_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-blog_entry-field_featured_image'
+  // Exported field: 'node-blog_entry-field_featured_image'.
   $fields['node-blog_entry-field_featured_image'] = array(
     'field_config' => array(
       'active' => '1',
@@ -272,6 +280,7 @@ function ash_blog_field_default_fields() {
           0 => 'fid',
         ),
       ),
+      'locked' => '0',
       'module' => 'image',
       'settings' => array(
         'default_image' => 0,
@@ -340,7 +349,7 @@ function ash_blog_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-blog_entry-field_tags'
+  // Exported field: 'node-blog_entry-field_tags'.
   $fields['node-blog_entry-field_tags'] = array(
     'field_config' => array(
       'active' => '1',
@@ -361,6 +370,7 @@ function ash_blog_field_default_fields() {
           0 => 'tid',
         ),
       ),
+      'locked' => '0',
       'module' => 'taxonomy',
       'settings' => array(
         'allowed_values' => array(

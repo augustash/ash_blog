@@ -27,7 +27,7 @@ function ash_blog_views_api() {
 function ash_blog_image_default_styles() {
   $styles = array();
 
-  // Exported image style: blog_featured_image
+  // Exported image style: blog_featured_image.
   $styles['blog_featured_image'] = array(
     'name' => 'blog_featured_image',
     'effects' => array(
