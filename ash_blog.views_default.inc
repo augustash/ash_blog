@@ -362,8 +362,12 @@ function ash_blog_views_default_views() {
   $handler->display->display_options['row_plugin'] = 'node_rss';
   $handler->display->display_options['path'] = 'blog.xml';
   $handler->display->display_options['displays'] = array(
-    'default' => 'default',
-    'page' => 'page',
+    'blog_page' => 'blog_page',
+    'default' => 0,
+    'blog_archive_page' => 0,
+    'blog_term_page' => 0,
+    'recent_posts_block' => 0,
+    'archive_block' => 0,
   );
 
   /* Display: Recent Posts Block */
