@@ -12,7 +12,7 @@ function ash_blog_taxonomy_default_vocabularies() {
     'category' => array(
       'name' => 'Category',
       'machine_name' => 'category',
-      'description' => 'Blog categories',
+      'description' => '',
       'hierarchy' => '0',
       'module' => 'taxonomy',
       'weight' => '0',
@@ -35,7 +35,7 @@ function ash_blog_taxonomy_default_vocabularies() {
     'tag' => array(
       'name' => 'Tag',
       'machine_name' => 'tag',
-      'description' => 'Basic blog tags.',
+      'description' => '',
       'hierarchy' => '0',
       'module' => 'taxonomy',
       'weight' => '0',

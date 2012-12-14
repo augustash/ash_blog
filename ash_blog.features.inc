@@ -31,7 +31,7 @@ function ash_blog_image_default_styles() {
   $styles['blog_featured_image'] = array(
     'name' => 'blog_featured_image',
     'effects' => array(
-      2 => array(
+      1 => array(
         'label' => 'Scale and crop',
         'help' => 'Scale and crop will maintain the aspect-ratio of the original image, then crop the larger dimension. This is most useful for creating perfectly square thumbnails without stretching the image.',
         'effect callback' => 'image_scale_and_crop_effect',
@@ -42,7 +42,7 @@ function ash_blog_image_default_styles() {
         'name' => 'image_scale_and_crop',
         'data' => array(
           'width' => '700',
-          'height' => '200',
+          'height' => '350',
         ),
         'weight' => '1',
       ),

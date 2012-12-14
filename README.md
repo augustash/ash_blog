@@ -7,22 +7,16 @@ Ash Blog
 
 ### Ash Blog Module Dependencies
 
-* Comment
-* Text
+* Chaos tools
 * Field
 * Field SQL storage
-* Gravatar
-* Image
 * File
-* Menu
-* Pathauto
+* Image
 * Path
-* Token
+* Pathauto
 * Strongarm
-* Chaos tools
 * Taxonomy
-* Options
-* Taxonomy display
 * Text formatter
+* Token
 * Views
 * Views UI

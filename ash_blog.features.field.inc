@@ -10,73 +10,6 @@
 function ash_blog_field_default_fields() {
   $fields = array();
 
-  // Exported field: 'comment-comment_node_blog_entry-comment_body'.
-  $fields['comment-comment_node_blog_entry-comment_body'] = array(
-    'field_config' => array(
-      'active' => '1',
-      'cardinality' => '1',
-      'deleted' => '0',
-      'entity_types' => array(
-        0 => 'comment',
-      ),
-      'field_name' => 'comment_body',
-      'foreign keys' => array(
-        'format' => array(
-          'columns' => array(
-            'format' => 'format',
-          ),
-          'table' => 'filter_format',
-        ),
-      ),
-      'indexes' => array(
-        'format' => array(
-          0 => 'format',
-        ),
-      ),
-      'locked' => '0',
-      'module' => 'text',
-      'settings' => array(),
-      'translatable' => '0',
-      'type' => 'text_long',
-    ),
-    'field_instance' => array(
-      'bundle' => 'comment_node_blog_entry',
-      'default_value' => NULL,
-      'deleted' => '0',
-      'description' => '',
-      'display' => array(
-        'default' => array(
-          'label' => 'hidden',
-          'module' => 'text',
-          'settings' => array(),
-          'type' => 'text_default',
-          'weight' => 0,
-        ),
-      ),
-      'entity_type' => 'comment',
-      'field_name' => 'comment_body',
-      'label' => 'Comment',
-      'required' => 1,
-      'settings' => array(
-        'linkit' => array(
-          'enable' => 0,
-          'insert_plugin' => '',
-        ),
-        'text_processing' => '0',
-        'user_register_form' => FALSE,
-      ),
-      'widget' => array(
-        'active' => 1,
-        'module' => 'text',
-        'settings' => array(
-          'rows' => '5',
-        ),
-        'type' => 'text_textarea',
-        'weight' => 0,
-      ),
-    ),
-  );
-
   // Exported field: 'node-blog_entry-body'.
   $fields['node-blog_entry-body'] = array(
     'field_config' => array(
@@ -103,7 +36,7 @@ function ash_blog_field_default_fields() {
       'locked' => '0',
       'module' => 'text',
       'settings' => array(),
-      'translatable' => '1',
+      'translatable' => '0',
       'type' => 'text_with_summary',
     ),
     'field_instance' => array(
@@ -113,13 +46,6 @@ function ash_blog_field_default_fields() {
       'description' => '',
       'display' => array(
         'default' => array(
-          'label' => 'hidden',
-          'module' => 'text',
-          'settings' => array(),
-          'type' => 'text_default',
-          'weight' => '1',
-        ),
-        'rss' => array(
           'label' => 'hidden',
           'module' => 'text',
           'settings' => array(),
@@ -152,7 +78,7 @@ function ash_blog_field_default_fields() {
           'summary_rows' => 5,
         ),
         'type' => 'text_textarea_with_summary',
-        'weight' => '3',
+        'weight' => '1',
       ),
     ),
   );
@@ -216,25 +142,6 @@ function ash_blog_field_default_fields() {
           'type' => 'textformatter_list',
           'weight' => '2',
         ),
-        'rss' => array(
-          'label' => 'inline',
-          'module' => 'textformatter',
-          'settings' => array(
-            'textformatter_class' => 'textformatter-list',
-            'textformatter_comma_and' => 1,
-            'textformatter_comma_full_stop' => 0,
-            'textformatter_comma_override' => 0,
-            'textformatter_comma_tag' => 'div',
-            'textformatter_contrib' => array(),
-            'textformatter_separator_custom' => '',
-            'textformatter_separator_custom_class' => 'textformatter-separator',
-            'textformatter_separator_custom_tag' => 'span',
-            'textformatter_term_plain' => 0,
-            'textformatter_type' => 'comma',
-          ),
-          'type' => 'textformatter_list',
-          'weight' => '2',
-        ),
         'teaser' => array(
           'label' => 'above',
           'settings' => array(),
@@ -254,7 +161,7 @@ function ash_blog_field_default_fields() {
         'module' => 'options',
         'settings' => array(),
         'type' => 'options_buttons',
-        'weight' => '4',
+        'weight' => '3',
       ),
     ),
   );
@@ -299,17 +206,7 @@ function ash_blog_field_default_fields() {
           'module' => 'image',
           'settings' => array(
             'image_link' => '',
-            'image_style' => '',
-          ),
-          'type' => 'image',
-          'weight' => '0',
-        ),
-        'rss' => array(
-          'label' => 'hidden',
-          'module' => 'image',
-          'settings' => array(
-            'image_link' => '',
-            'image_style' => '',
+            'image_style' => 'blog_featured_image',
           ),
           'type' => 'image',
           'weight' => '0',
@@ -344,7 +241,7 @@ function ash_blog_field_default_fields() {
           'progress_indicator' => 'throbber',
         ),
         'type' => 'image_image',
-        'weight' => '2',
+        'weight' => '5',
       ),
     ),
   );
@@ -387,28 +284,9 @@ function ash_blog_field_default_fields() {
       'bundle' => 'blog_entry',
       'default_value' => NULL,
       'deleted' => '0',
-      'description' => 'Separate tags with commas',
+      'description' => '',
       'display' => array(
         'default' => array(
-          'label' => 'inline',
-          'module' => 'textformatter',
-          'settings' => array(
-            'textformatter_class' => 'textformatter-list',
-            'textformatter_comma_and' => 1,
-            'textformatter_comma_full_stop' => 0,
-            'textformatter_comma_override' => 0,
-            'textformatter_comma_tag' => 'div',
-            'textformatter_contrib' => array(),
-            'textformatter_separator_custom' => '',
-            'textformatter_separator_custom_class' => 'textformatter-separator',
-            'textformatter_separator_custom_tag' => 'span',
-            'textformatter_term_plain' => 0,
-            'textformatter_type' => 'comma',
-          ),
-          'type' => 'textformatter_list',
-          'weight' => '3',
-        ),
-        'rss' => array(
           'label' => 'inline',
           'module' => 'textformatter',
           'settings' => array(
@@ -449,7 +327,7 @@ function ash_blog_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'taxonomy_autocomplete',
-        'weight' => '5',
+        'weight' => '4',
       ),
     ),
   );
@@ -458,9 +336,7 @@ function ash_blog_field_default_fields() {
   // Included for use with string extractors like potx.
   t('Body');
   t('Categories');
-  t('Comment');
   t('Featured Image');
-  t('Separate tags with commas');
   t('Tags');
 
   return $fields;
